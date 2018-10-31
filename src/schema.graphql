@@ -1,0 +1,19 @@
+type Query {
+  hello: String
+}
+
+type Mutation {
+  sayHello(input: TestInput!): String
+}
+
+input TestInput {
+  number: Int
+  str: String
+  list: [String]
+  bool: Boolean
+  listref: [OtherInput]
+}
+
+input OtherInput {
+  name: String
+}
