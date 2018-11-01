@@ -3,7 +3,6 @@
 
 import { MutationResolvers } from "../generated/graphqlgen";
 
-export const Mutation: MutationResolvers.Type = {
-  ...MutationResolvers.defaultResolvers,
+export const Mutation: MutationResolvers.Resolvers = {
   sayHello: (parent, args) => null
 };

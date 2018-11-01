@@ -3,7 +3,6 @@
 
 import { QueryResolvers } from "../generated/graphqlgen";
 
-export const Query: QueryResolvers.Type = {
-  ...QueryResolvers.defaultResolvers,
+export const Query: QueryResolvers.Resolvers = {
   hello: parent => null
 };

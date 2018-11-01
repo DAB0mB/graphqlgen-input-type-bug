@@ -4,13 +4,14 @@
   "main": "src/index.ts",
   "scripts": {
     "start": "nodemon -x ts-node --no-cache src/index.ts",
-    "generate": "graphqlgen"
+    "generate": "gql-gen --schema src/schema.graphql --template graphql-codegen-typescript-resolvers-template --out src/generated/graphqlgen.ts"
   },
   "dependencies": {
     "graphql-yoga": "^1.16.2"
   },
   "devDependencies": {
-    "graphqlgen": "0.2.12",
+    "graphql-code-generator": "^0.13.0",
+    "graphql-codegen-typescript-resolvers-template": "^0.13.0",
     "nodemon": "1.18.5",
     "ts-node": "7.0.1",
     "typescript": "3.1.4"
